@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working Days Calculator | Ultimate Online Calculator</title>
+<meta name="description" content="Count business days between two dates, excluding Saturdays and Sundays.">
+<link rel="canonical" href="https://www.ultimateonlinecalculator.com/calculators/working-days.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Working Days Calculator | Ultimate Online Calculator">
+<meta property="og:description" content="Count business days between two dates, excluding Saturdays and Sundays.">
+<meta property="og:url" content="https://www.ultimateonlinecalculator.com/calculators/working-days.html">
+<meta property="og:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+<meta property="og:site_name" content="Ultimate Online Calculator">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Working Days Calculator | Ultimate Online Calculator">
+<meta name="twitter:description" content="Count business days between two dates, excluding Saturdays and Sundays.">
+<meta name="twitter:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/images/icons/icon-180.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2E5AAC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Working Days Calculator","description":"Count business days between two dates, excluding Saturdays and Sundays.","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ultimateonlinecalculator.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://www.ultimateonlinecalculator.com/calculators/"},{"@type":"ListItem","position":3,"name":"Date & Time","item":"https://www.ultimateonlinecalculator.com/categories/date-time.html"},{"@type":"ListItem","position":4,"name":"Working Days Calculator","item":"https://www.ultimateonlinecalculator.com/calculators/working-days.html"}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this exclude public holidays too?", "acceptedAnswer": {"@type": "Answer", "text": "No \u2014 this calculator excludes weekends only, since public holidays vary by country, region and organization. Subtract any known holidays from the result manually if needed."}}, {"@type": "Question", "name": "Are the start and end dates both counted?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 both the start and end date are included in the count if they fall on a weekday."}}, {"@type": "Question", "name": "Why is my count different from what I expected?", "acceptedAnswer": {"@type": "Answer", "text": "Double check whether your target definition includes or excludes the starting day \u2014 conventions for phrases like '5 business days from today' vary."}}]}</script>
+
+</head>
+<body data-calc-slug="working-days">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-mark">UC</span>
+        Ultimate Online Calculator
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/calculators/" class="active">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <div class="header-search" data-search-widget>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+          <div class="search-results" data-search-results></div>
+        </div>
+        <button class="search-trigger" aria-label="Search" onclick="document.querySelector('[data-search-input]')?.focus()">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        </button>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon></span></button>
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span data-menu-icon></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="mobile-search" data-search-widget>
+      <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+      <div class="search-results" data-search-results></div>
+    </div>
+    <a href="/calculators/">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/calculators/">All Calculators</a>
+  </div>
+
+<main id="main">
+<div class="container section-tight">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/calculators/">Calculators</a><span class="sep">/</span><a href="/categories/date-time.html">Date & Time</a><span class="sep">/</span><span class="current" aria-current="page">Working Days Calculator</span></nav>
+  <div class="grid calc-page-grid">
+    <div>
+      <span class="badge">Date & Time</span>
+      <h1>Working Days Calculator</h1>
+      <p class="lead">Count the number of working days (Monday–Friday) between two dates, with weekends automatically excluded.</p>
+
+      <div class="card card-ticked calc-tool" data-calc-slug-holder>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; gap:10px; flex-wrap:wrap;">
+        <h2 style="margin:0;">Calculate Working Days</h2>
+        <button type="button" class="btn btn-outline btn-sm" data-fav-toggle="working-days" aria-pressed="false">Add to Favorites</button>
+      </div>
+      <form id="calc-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="start-date">Start date</label>
+            <input type="date" id="start-date">
+          </div>
+          <div class="field">
+            <label for="end-date">End date</label>
+            <input type="date" id="end-date">
+          </div>
+        </div>
+    <div class="calc-actions">
+      <button type="submit" class="btn btn-primary">Calculate</button>
+      <button type="button" class="btn btn-outline" data-reset-btn><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-2.6-5.9" stroke-linecap="round"/><path d="M20 4v5h-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Reset</button>
+    </div>
+      </form>
+
+      <div class="result-panel" id="result-panel">
+        <div class="result-label">Result</div>
+        <div class="readout" id="result-readout">—</div>
+        <div class="result-scale"></div>
+        <div class="result-breakdown" id="result-breakdown"></div>
+      <div class="result-actions">
+        <button type="button" class="btn btn-outline btn-sm" data-copy-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Copy Result</button>
+        <button type="button" class="btn btn-outline btn-sm" data-share-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.4"/><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="19" r="2.4"/><path d="M8.1 10.8l7.8-4.1M8.1 13.2l7.8 4.1" stroke-linecap="round"/></svg> Share</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="history-block visually-hidden" style="margin-top:26px;">
+        <h3>Calculation History</h3>
+        <p style="font-size:.9rem;">Your last calculations on this page, saved privately in your browser.</p>
+        <div class="result-breakdown" data-calc-history></div>
+        <button class="btn btn-outline btn-sm" data-clear-history style="margin-top:10px;">Clear History</button>
+      </div>
+
+      <hr class="rule">
+      <h2>Formula</h2>
+      <p>Every calendar day between the start and end date is checked; Saturdays and Sundays are excluded from the working-day count.</p>
+
+      <h2>Worked Examples</h2>
+      <p>From Monday 3 August 2026 to Friday 14 August 2026 (inclusive) is <strong>10 working days</strong>, out of 12 total calendar days.</p>
+
+      <h2>How to Use the Working Days Calculator</h2>
+      <ol><li>Choose a start date.</li><li>Choose an end date (must be on or after the start date).</li><li>Press Calculate to see the working day count, with weekend days excluded.</li></ol>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">Does this exclude public holidays too?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>No — this calculator excludes weekends only, since public holidays vary by country, region and organization. Subtract any known holidays from the result manually if needed.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Are the start and end dates both counted?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Yes — both the start and end date are included in the count if they fall on a weekday.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Why is my count different from what I expected?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Double check whether your target definition includes or excludes the starting day — conventions for phrases like '5 business days from today' vary.</p></div>
+    </div>
+</div>
+    </div>
+
+    <aside>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Calculators</h3>
+        <ul class="related-list">
+<li><a href="/calculators/date-difference.html"><span>Date Difference Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/calculators/age.html"><span>Age Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Guides</h3>
+        <ul class="related-list">
+<li><a href="/guides/how-to-calculate-working-days.html"><span>How to Calculate Working Days</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/guides/how-to-calculate-your-age.html"><span>How to Calculate Your Age</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <!-- <div class="ad-slot ad-sidebar" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+      <div class="recently-used-block card card-ticked visually-hidden">
+        <h3 style="font-size:1rem;">Recently Used</h3>
+        <div class="pill-nav" data-recently-used></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- <div class="ad-slot" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+</div>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="/" style="margin-bottom:12px;">
+            <span class="brand-mark">UC</span>
+            Ultimate Online Calculator
+          </a>
+          <p>Free, fast, accurate calculators for math, money, health, school and everyday life &mdash; no account required.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/categories/math.html">Math</a></li>
+            <li><a href="/categories/financial.html">Financial</a></li>
+            <li><a href="/categories/health.html">Health &amp; Fitness</a></li>
+            <li><a href="/categories/education.html">Education</a></li>
+            <li><a href="/categories/date-time.html">Date &amp; Time</a></li>
+            <li><a href="/categories/everyday.html">Everyday</a></li>
+            <li><a href="/categories/measurement.html">Measurement</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/calculators/">All Calculators</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/pages/cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Ultimate Online Calculator. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/pages/privacy-policy.html">Privacy</a>
+          <a href="/pages/terms-of-use.html">Terms</a>
+          <a href="/pages/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/icons.js"></script>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/history.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/calc-common.js"></script>
+  <script src="/assets/js/calculators/working-days.js"></script>
+
+</body>
+</html>

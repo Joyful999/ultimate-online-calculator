@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interest Calculator | Ultimate Online Calculator</title>
+<meta name="description" content="Calculate interest earned or owed using the simple interest formula, where interest is based only on the original principal.">
+<link rel="canonical" href="https://www.ultimateonlinecalculator.com/calculators/simple-interest.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simple Interest Calculator | Ultimate Online Calculator">
+<meta property="og:description" content="Calculate interest earned or owed using the simple interest formula, where interest is based only on the original principal.">
+<meta property="og:url" content="https://www.ultimateonlinecalculator.com/calculators/simple-interest.html">
+<meta property="og:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+<meta property="og:site_name" content="Ultimate Online Calculator">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simple Interest Calculator | Ultimate Online Calculator">
+<meta name="twitter:description" content="Calculate interest earned or owed using the simple interest formula, where interest is based only on the original principal.">
+<meta name="twitter:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/images/icons/icon-180.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2E5AAC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Simple Interest Calculator","description":"Calculate interest earned or owed using the simple interest formula, where interest is based only on the original principal.","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ultimateonlinecalculator.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://www.ultimateonlinecalculator.com/calculators/"},{"@type":"ListItem","position":3,"name":"Financial","item":"https://www.ultimateonlinecalculator.com/categories/financial.html"},{"@type":"ListItem","position":4,"name":"Simple Interest Calculator","item":"https://www.ultimateonlinecalculator.com/calculators/simple-interest.html"}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is this different from compound interest?", "acceptedAnswer": {"@type": "Answer", "text": "Simple interest is calculated only on the original principal every period, while compound interest is calculated on the principal plus any interest already accrued \u2014 see our comparison guide for the full picture."}}, {"@type": "Question", "name": "Can I use months instead of years?", "acceptedAnswer": {"@type": "Answer", "text": "Enter years as a decimal \u2014 for example, 6 months is 0.5 years."}}, {"@type": "Question", "name": "Does this apply to my mortgage?", "acceptedAnswer": {"@type": "Answer", "text": "Most mortgages use compound interest amortization, not simple interest \u2014 use the Loan Calculator for mortgage-style payments instead."}}]}</script>
+
+</head>
+<body data-calc-slug="simple-interest">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-mark">UC</span>
+        Ultimate Online Calculator
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/calculators/" class="active">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <div class="header-search" data-search-widget>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+          <div class="search-results" data-search-results></div>
+        </div>
+        <button class="search-trigger" aria-label="Search" onclick="document.querySelector('[data-search-input]')?.focus()">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        </button>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon></span></button>
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span data-menu-icon></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="mobile-search" data-search-widget>
+      <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+      <div class="search-results" data-search-results></div>
+    </div>
+    <a href="/calculators/">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/calculators/">All Calculators</a>
+  </div>
+
+<main id="main">
+<div class="container section-tight">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/calculators/">Calculators</a><span class="sep">/</span><a href="/categories/financial.html">Financial</a><span class="sep">/</span><span class="current" aria-current="page">Simple Interest Calculator</span></nav>
+  <div class="grid calc-page-grid">
+    <div>
+      <span class="badge">Financial</span>
+      <h1>Simple Interest Calculator</h1>
+      <p class="lead">Calculate interest that accrues only on the original principal — no compounding involved.</p>
+
+      <div class="card card-ticked calc-tool" data-calc-slug-holder>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; gap:10px; flex-wrap:wrap;">
+        <h2 style="margin:0;">Calculate Simple Interest</h2>
+        <button type="button" class="btn btn-outline btn-sm" data-fav-toggle="simple-interest" aria-pressed="false">Add to Favorites</button>
+      </div>
+      <form id="calc-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="principal">Principal amount</label>
+            <div class="input-suffix"><input type="number" id="principal" step="any" placeholder="10000"><span class="unit">$</span></div>
+          </div>
+          <div class="field">
+            <label for="rate">Annual interest rate</label>
+            <div class="input-suffix"><input type="number" id="rate" step="any" placeholder="5"><span class="unit">%</span></div>
+          </div>
+        </div>
+        <div class="field-row single">
+          <div class="field">
+            <label for="years">Time period (years)</label>
+            <input type="number" id="years" step="any" placeholder="3">
+          </div>
+        </div>
+    <div class="calc-actions">
+      <button type="submit" class="btn btn-primary">Calculate</button>
+      <button type="button" class="btn btn-outline" data-reset-btn><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-2.6-5.9" stroke-linecap="round"/><path d="M20 4v5h-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Reset</button>
+    </div>
+      </form>
+
+      <div class="result-panel" id="result-panel">
+        <div class="result-label">Result</div>
+        <div class="readout" id="result-readout">—</div>
+        <div class="result-scale"></div>
+        <div class="result-breakdown" id="result-breakdown"></div>
+      <div class="result-actions">
+        <button type="button" class="btn btn-outline btn-sm" data-copy-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Copy Result</button>
+        <button type="button" class="btn btn-outline btn-sm" data-share-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.4"/><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="19" r="2.4"/><path d="M8.1 10.8l7.8-4.1M8.1 13.2l7.8 4.1" stroke-linecap="round"/></svg> Share</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="history-block visually-hidden" style="margin-top:26px;">
+        <h3>Calculation History</h3>
+        <p style="font-size:.9rem;">Your last calculations on this page, saved privately in your browser.</p>
+        <div class="result-breakdown" data-calc-history></div>
+        <button class="btn btn-outline btn-sm" data-clear-history style="margin-top:10px;">Clear History</button>
+      </div>
+
+      <hr class="rule">
+      <h2>Formula</h2>
+      <p class="mono" style="background:var(--paper-alt); padding:12px 16px; border-radius:10px;">Interest = P × r × t</p><p>P is the principal, r is the annual rate as a decimal, and t is time in years.</p>
+
+      <h2>Worked Examples</h2>
+      <p>$10,000 at 5% for 3 years: Interest = 10000 × 0.05 × 3 = <strong>$1,500</strong>, for a total of $11,500.</p>
+
+      <h2>How to Use the Simple Interest Calculator</h2>
+      <ol><li>Enter the principal amount.</li><li>Enter the annual interest rate.</li><li>Enter the time period in years.</li><li>Press Calculate to see interest earned and the total amount.</li></ol>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">How is this different from compound interest?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Simple interest is calculated only on the original principal every period, while compound interest is calculated on the principal plus any interest already accrued — see our comparison guide for the full picture.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I use months instead of years?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Enter years as a decimal — for example, 6 months is 0.5 years.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Does this apply to my mortgage?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Most mortgages use compound interest amortization, not simple interest — use the Loan Calculator for mortgage-style payments instead.</p></div>
+    </div>
+</div>
+    </div>
+
+    <aside>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Calculators</h3>
+        <ul class="related-list">
+<li><a href="/calculators/compound-interest.html"><span>Compound Interest Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/calculators/loan.html"><span>Loan Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/calculators/discount.html"><span>Discount Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Guides</h3>
+        <ul class="related-list">
+<li><a href="/guides/simple-interest-vs-compound-interest.html"><span>Simple Interest vs Compound Interest</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/guides/how-compound-interest-works.html"><span>How Compound Interest Works</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <!-- <div class="ad-slot ad-sidebar" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+      <div class="recently-used-block card card-ticked visually-hidden">
+        <h3 style="font-size:1rem;">Recently Used</h3>
+        <div class="pill-nav" data-recently-used></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- <div class="ad-slot" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+</div>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="/" style="margin-bottom:12px;">
+            <span class="brand-mark">UC</span>
+            Ultimate Online Calculator
+          </a>
+          <p>Free, fast, accurate calculators for math, money, health, school and everyday life &mdash; no account required.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/categories/math.html">Math</a></li>
+            <li><a href="/categories/financial.html">Financial</a></li>
+            <li><a href="/categories/health.html">Health &amp; Fitness</a></li>
+            <li><a href="/categories/education.html">Education</a></li>
+            <li><a href="/categories/date-time.html">Date &amp; Time</a></li>
+            <li><a href="/categories/everyday.html">Everyday</a></li>
+            <li><a href="/categories/measurement.html">Measurement</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/calculators/">All Calculators</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/pages/cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Ultimate Online Calculator. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/pages/privacy-policy.html">Privacy</a>
+          <a href="/pages/terms-of-use.html">Terms</a>
+          <a href="/pages/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/icons.js"></script>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/history.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/calc-common.js"></script>
+  <script src="/assets/js/calculators/simple-interest.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Calculator | Ultimate Online Calculator</title>
+<meta name="description" content="Calculate exact age in years, months and days from any date of birth, accounting for leap years.">
+<link rel="canonical" href="https://www.ultimateonlinecalculator.com/calculators/age.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Age Calculator | Ultimate Online Calculator">
+<meta property="og:description" content="Calculate exact age in years, months and days from any date of birth, accounting for leap years.">
+<meta property="og:url" content="https://www.ultimateonlinecalculator.com/calculators/age.html">
+<meta property="og:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+<meta property="og:site_name" content="Ultimate Online Calculator">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Age Calculator | Ultimate Online Calculator">
+<meta name="twitter:description" content="Calculate exact age in years, months and days from any date of birth, accounting for leap years.">
+<meta name="twitter:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/images/icons/icon-180.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2E5AAC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Age Calculator","description":"Calculate exact age in years, months and days from any date of birth, accounting for leap years.","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ultimateonlinecalculator.com/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://www.ultimateonlinecalculator.com/calculators/"},{"@type":"ListItem","position":3,"name":"Date & Time","item":"https://www.ultimateonlinecalculator.com/categories/date-time.html"},{"@type":"ListItem","position":4,"name":"Age Calculator","item":"https://www.ultimateonlinecalculator.com/calculators/age.html"}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this account for leap years?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 the calculation is based on real calendar dates, so leap years are automatically handled correctly."}}, {"@type": "Question", "name": "Can I calculate someone's age on a future or past date?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 set the 'as of' field to any date to see what the age was, or will be, on that date."}}, {"@type": "Question", "name": "Why does the age seem one year less than I expected?", "acceptedAnswer": {"@type": "Answer", "text": "If this year's birthday hasn't happened yet relative to the 'as of' date, the most recent completed year hasn't occurred \u2014 see our full guide on calculating age for the detailed explanation."}}]}</script>
+
+</head>
+<body data-calc-slug="age">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-mark">UC</span>
+        Ultimate Online Calculator
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/calculators/" class="active">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <div class="header-search" data-search-widget>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+          <div class="search-results" data-search-results></div>
+        </div>
+        <button class="search-trigger" aria-label="Search" onclick="document.querySelector('[data-search-input]')?.focus()">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        </button>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon></span></button>
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span data-menu-icon></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="mobile-search" data-search-widget>
+      <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+      <div class="search-results" data-search-results></div>
+    </div>
+    <a href="/calculators/">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/calculators/">All Calculators</a>
+  </div>
+
+<main id="main">
+<div class="container section-tight">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/calculators/">Calculators</a><span class="sep">/</span><a href="/categories/date-time.html">Date & Time</a><span class="sep">/</span><span class="current" aria-current="page">Age Calculator</span></nav>
+  <div class="grid calc-page-grid">
+    <div>
+      <span class="badge">Date & Time</span>
+      <h1>Age Calculator</h1>
+      <p class="lead">Calculate exact age in years, months and days from a date of birth — accurate leap-year handling included.</p>
+
+      <div class="card card-ticked calc-tool" data-calc-slug-holder>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; gap:10px; flex-wrap:wrap;">
+        <h2 style="margin:0;">Calculate Age</h2>
+        <button type="button" class="btn btn-outline btn-sm" data-fav-toggle="age" aria-pressed="false">Add to Favorites</button>
+      </div>
+      <form id="calc-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob">
+          </div>
+          <div class="field">
+            <label for="as-of">Age as of (optional)</label>
+            <input type="date" id="as-of">
+            <span class="hint">Leave blank to use today's date.</span>
+          </div>
+        </div>
+    <div class="calc-actions">
+      <button type="submit" class="btn btn-primary">Calculate</button>
+      <button type="button" class="btn btn-outline" data-reset-btn><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 1 1-2.6-5.9" stroke-linecap="round"/><path d="M20 4v5h-5" stroke-linecap="round" stroke-linejoin="round"/></svg> Reset</button>
+    </div>
+      </form>
+
+      <div class="result-panel" id="result-panel">
+        <div class="result-label">Result</div>
+        <div class="readout" id="result-readout">—</div>
+        <div class="result-scale"></div>
+        <div class="result-breakdown" id="result-breakdown"></div>
+      <div class="result-actions">
+        <button type="button" class="btn btn-outline btn-sm" data-copy-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Copy Result</button>
+        <button type="button" class="btn btn-outline btn-sm" data-share-btn><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.4"/><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="19" r="2.4"/><path d="M8.1 10.8l7.8-4.1M8.1 13.2l7.8 4.1" stroke-linecap="round"/></svg> Share</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="history-block visually-hidden" style="margin-top:26px;">
+        <h3>Calculation History</h3>
+        <p style="font-size:.9rem;">Your last calculations on this page, saved privately in your browser.</p>
+        <div class="result-breakdown" data-calc-history></div>
+        <button class="btn btn-outline btn-sm" data-clear-history style="margin-top:10px;">Clear History</button>
+      </div>
+
+      <hr class="rule">
+      <h2>Formula</h2>
+      <p>Age is found by taking the difference in years between the birth date and today, then subtracting one year if this year's birthday hasn't happened yet — followed by calculating the remaining months and days precisely.</p>
+
+      <h2>Worked Examples</h2>
+      <p>Born 14 September 2000, calculated as of 25 August 2026: age is <strong>25 years, 11 months, 11 days</strong>, since this year's birthday hasn't occurred yet.</p>
+
+      <h2>How to Use the Age Calculator</h2>
+      <ol><li>Enter the date of birth.</li><li>Optionally set a specific 'as of' date — otherwise today's date is used.</li><li>Press Calculate to see the exact age, plus total days and weeks lived.</li></ol>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">Does this account for leap years?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Yes — the calculation is based on real calendar dates, so leap years are automatically handled correctly.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I calculate someone's age on a future or past date?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>Yes — set the 'as of' field to any date to see what the age was, or will be, on that date.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Why does the age seem one year less than I expected?<span class="chev"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+      <div class="faq-a"><p>If this year's birthday hasn't happened yet relative to the 'as of' date, the most recent completed year hasn't occurred — see our full guide on calculating age for the detailed explanation.</p></div>
+    </div>
+</div>
+    </div>
+
+    <aside>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Calculators</h3>
+        <ul class="related-list">
+<li><a href="/calculators/date-difference.html"><span>Date Difference Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/calculators/working-days.html"><span>Working Days Calculator</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <div class="card card-ticked" style="margin-bottom:20px;">
+        <h3 style="font-size:1rem;">Related Guides</h3>
+        <ul class="related-list">
+<li><a href="/guides/how-to-calculate-your-age.html"><span>How to Calculate Your Age</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a href="/guides/how-to-calculate-working-days.html"><span>How to Calculate Working Days</span><span class="arrow"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+</ul>
+      </div>
+      <!-- <div class="ad-slot ad-sidebar" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+      <div class="recently-used-block card card-ticked visually-hidden">
+        <h3 style="font-size:1rem;">Recently Used</h3>
+        <div class="pill-nav" data-recently-used></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- <div class="ad-slot" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+</div>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="/" style="margin-bottom:12px;">
+            <span class="brand-mark">UC</span>
+            Ultimate Online Calculator
+          </a>
+          <p>Free, fast, accurate calculators for math, money, health, school and everyday life &mdash; no account required.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/categories/math.html">Math</a></li>
+            <li><a href="/categories/financial.html">Financial</a></li>
+            <li><a href="/categories/health.html">Health &amp; Fitness</a></li>
+            <li><a href="/categories/education.html">Education</a></li>
+            <li><a href="/categories/date-time.html">Date &amp; Time</a></li>
+            <li><a href="/categories/everyday.html">Everyday</a></li>
+            <li><a href="/categories/measurement.html">Measurement</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/calculators/">All Calculators</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/pages/cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Ultimate Online Calculator. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/pages/privacy-policy.html">Privacy</a>
+          <a href="/pages/terms-of-use.html">Terms</a>
+          <a href="/pages/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/icons.js"></script>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/history.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/calc-common.js"></script>
+  <script src="/assets/js/calculators/age.js"></script>
+
+</body>
+</html>

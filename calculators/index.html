@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Calculators | Ultimate Online Calculator</title>
+<meta name="description" content="Browse and search the full library of free online calculators, organized by category and alphabetically.">
+<link rel="canonical" href="https://www.ultimateonlinecalculator.com/calculators/index.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Calculators | Ultimate Online Calculator">
+<meta property="og:description" content="Browse and search the full library of free online calculators, organized by category and alphabetically.">
+<meta property="og:url" content="https://www.ultimateonlinecalculator.com/calculators/index.html">
+<meta property="og:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+<meta property="og:site_name" content="Ultimate Online Calculator">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="All Calculators | Ultimate Online Calculator">
+<meta name="twitter:description" content="Browse and search the full library of free online calculators, organized by category and alphabetically.">
+<meta name="twitter:image" content="https://www.ultimateonlinecalculator.com/assets/images/og-default.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/images/icons/icon-180.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2E5AAC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-mark">UC</span>
+        Ultimate Online Calculator
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/calculators/" class="active">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <div class="header-search" data-search-widget>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+          <div class="search-results" data-search-results></div>
+        </div>
+        <button class="search-trigger" aria-label="Search" onclick="document.querySelector('[data-search-input]')?.focus()">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+        </button>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon></span></button>
+        <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span data-menu-icon></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="mobile-search" data-search-widget>
+      <input type="search" placeholder="Search calculators…" aria-label="Search calculators" data-search-input autocomplete="off">
+      <div class="search-results" data-search-results></div>
+    </div>
+    <a href="/calculators/">Calculators</a>
+        <a href="/categories/">Categories</a>
+        <a href="/#popular">Popular</a>
+        <a href="/guides/">Guides</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/contact.html">Contact</a>
+        <a href="/calculators/">All Calculators</a>
+  </div>
+
+<main id="main">
+
+<div class="container section-tight">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span class="current" aria-current="page">Calculators</span></nav>
+  <span class="eyebrow">Full library</span>
+  <h1>All Calculators</h1>
+  <p class="lead">Search, filter by category, or jump straight to a letter. Every calculator here runs instantly in your browser.</p>
+
+  <div class="filter-bar" data-search-widget>
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+      <input type="search" id="page-search" placeholder="Search all calculators…" data-search-input autocomplete="off">
+    </div>
+    <div class="pill-nav" id="cat-filters"><button class="pill active" data-filter="all">All</button><button class="pill" data-filter="math">Math</button><button class="pill" data-filter="financial">Financial</button><button class="pill" data-filter="date-time">Date & Time</button><button class="pill" data-filter="health">Health & Fitness</button><button class="pill" data-filter="education">Education</button><button class="pill" data-filter="everyday">Everyday</button><button class="pill" data-filter="measurement">Measurement</button></div>
+  </div>
+
+  <div id="live-results"></div>
+
+  <div class="alpha-jump"><a href="#letter-A">A</a><a href="#letter-B">B</a><a href="#letter-C">C</a><a href="#letter-D">D</a><a href="#letter-F">F</a><a href="#letter-G">G</a><a href="#letter-L">L</a><a href="#letter-P">P</a><a href="#letter-S">S</a><a href="#letter-T">T</a><a href="#letter-W">W</a></div>
+  <div id="alpha-listing">
+    <div class="alpha-group" id="letter-A"><h3>A</h3><ul class="related-list"><li data-cat="date-time" data-name="age calculator"><a href="/calculators/age.html">Age Calculator</a> <span class="badge">Date & Time</span></li><li data-cat="math" data-name="average calculator"><a href="/calculators/average.html">Average Calculator</a> <span class="badge">Math</span></li></ul></div><div class="alpha-group" id="letter-B"><h3>B</h3><ul class="related-list"><li data-cat="health" data-name="bmi calculator"><a href="/calculators/bmi.html">BMI Calculator</a> <span class="badge">Health & Fitness</span></li><li data-cat="health" data-name="bmr calculator"><a href="/calculators/bmr.html">BMR Calculator</a> <span class="badge">Health & Fitness</span></li></ul></div><div class="alpha-group" id="letter-C"><h3>C</h3><ul class="related-list"><li data-cat="health" data-name="calorie calculator"><a href="/calculators/calorie.html">Calorie Calculator</a> <span class="badge">Health & Fitness</span></li><li data-cat="financial" data-name="compound interest calculator"><a href="/calculators/compound-interest.html">Compound Interest Calculator</a> <span class="badge">Financial</span></li></ul></div><div class="alpha-group" id="letter-D"><h3>D</h3><ul class="related-list"><li data-cat="date-time" data-name="date difference calculator"><a href="/calculators/date-difference.html">Date Difference Calculator</a> <span class="badge">Date & Time</span></li><li data-cat="financial" data-name="discount calculator"><a href="/calculators/discount.html">Discount Calculator</a> <span class="badge">Financial</span></li></ul></div><div class="alpha-group" id="letter-F"><h3>F</h3><ul class="related-list"><li data-cat="everyday" data-name="fuel cost calculator"><a href="/calculators/fuel-cost.html">Fuel Cost Calculator</a> <span class="badge">Everyday</span></li></ul></div><div class="alpha-group" id="letter-G"><h3>G</h3><ul class="related-list"><li data-cat="education" data-name="gpa calculator"><a href="/calculators/gpa.html">GPA Calculator</a> <span class="badge">Education</span></li><li data-cat="education" data-name="grade calculator"><a href="/calculators/grade.html">Grade Calculator</a> <span class="badge">Education</span></li></ul></div><div class="alpha-group" id="letter-L"><h3>L</h3><ul class="related-list"><li data-cat="measurement" data-name="length converter"><a href="/calculators/length-converter.html">Length Converter</a> <span class="badge">Measurement</span></li><li data-cat="financial" data-name="loan calculator"><a href="/calculators/loan.html">Loan Calculator</a> <span class="badge">Financial</span></li></ul></div><div class="alpha-group" id="letter-P"><h3>P</h3><ul class="related-list"><li data-cat="math" data-name="percentage calculator"><a href="/calculators/percentage.html">Percentage Calculator</a> <span class="badge">Math</span></li><li data-cat="financial" data-name="profit margin calculator"><a href="/calculators/profit-margin.html">Profit Margin Calculator</a> <span class="badge">Financial</span></li></ul></div><div class="alpha-group" id="letter-S"><h3>S</h3><ul class="related-list"><li data-cat="financial" data-name="sales tax calculator"><a href="/calculators/tax.html">Sales Tax Calculator</a> <span class="badge">Financial</span></li><li data-cat="financial" data-name="simple interest calculator"><a href="/calculators/simple-interest.html">Simple Interest Calculator</a> <span class="badge">Financial</span></li><li data-cat="everyday" data-name="split bill calculator"><a href="/calculators/split-bill.html">Split Bill Calculator</a> <span class="badge">Everyday</span></li><li data-cat="math" data-name="square root calculator"><a href="/calculators/square-root.html">Square Root Calculator</a> <span class="badge">Math</span></li></ul></div><div class="alpha-group" id="letter-T"><h3>T</h3><ul class="related-list"><li data-cat="measurement" data-name="temperature converter"><a href="/calculators/temperature-converter.html">Temperature Converter</a> <span class="badge">Measurement</span></li><li data-cat="everyday" data-name="tip calculator"><a href="/calculators/tip.html">Tip Calculator</a> <span class="badge">Everyday</span></li></ul></div><div class="alpha-group" id="letter-W"><h3>W</h3><ul class="related-list"><li data-cat="date-time" data-name="working days calculator"><a href="/calculators/working-days.html">Working Days Calculator</a> <span class="badge">Date & Time</span></li></ul></div>
+  </div>
+
+  <div id="empty-state" class="empty-state" style="display:none;">
+    <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+    <h3>No calculators found</h3>
+    <p>Try a different search term or clear the category filter.</p>
+  </div>
+
+  <!-- <div class="ad-slot" role="complementary" aria-label="Advertisement">Advertisement space</div> -->
+</div>
+
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="/" style="margin-bottom:12px;">
+            <span class="brand-mark">UC</span>
+            Ultimate Online Calculator
+          </a>
+          <p>Free, fast, accurate calculators for math, money, health, school and everyday life &mdash; no account required.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/categories/math.html">Math</a></li>
+            <li><a href="/categories/financial.html">Financial</a></li>
+            <li><a href="/categories/health.html">Health &amp; Fitness</a></li>
+            <li><a href="/categories/education.html">Education</a></li>
+            <li><a href="/categories/date-time.html">Date &amp; Time</a></li>
+            <li><a href="/categories/everyday.html">Everyday</a></li>
+            <li><a href="/categories/measurement.html">Measurement</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/calculators/">All Calculators</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/pages/cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Ultimate Online Calculator. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/pages/privacy-policy.html">Privacy</a>
+          <a href="/pages/terms-of-use.html">Terms</a>
+          <a href="/pages/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/icons.js"></script>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/history.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+  (function(){
+    let activeCat = "all";
+    const input = document.getElementById("page-search");
+    const listing = document.getElementById("alpha-listing");
+    const jump = document.querySelector(".alpha-jump");
+    const empty = document.getElementById("empty-state");
+    const items = Array.from(document.querySelectorAll("#alpha-listing li"));
+
+    function applyFilters(){
+      const term = (input.value || "").trim().toLowerCase();
+      let visibleCount = 0;
+      items.forEach(li=>{
+        const matchesCat = activeCat === "all" || li.getAttribute("data-cat") === activeCat;
+        const matchesTerm = !term || li.getAttribute("data-name").includes(term);
+        const show = matchesCat && matchesTerm;
+        li.style.display = show ? "" : "none";
+        if(show) visibleCount++;
+      });
+      document.querySelectorAll(".alpha-group").forEach(g=>{
+        const anyVisible = Array.from(g.querySelectorAll("li")).some(li => li.style.display !== "none");
+        g.style.display = anyVisible ? "" : "none";
+      });
+      listing.style.display = visibleCount ? "" : "none";
+      jump.style.display = visibleCount ? "" : "none";
+      empty.style.display = visibleCount ? "none" : "block";
+    }
+
+    input.addEventListener("input", applyFilters);
+    document.getElementById("cat-filters").addEventListener("click", function(e){
+      const btn = e.target.closest(".pill");
+      if(!btn) return;
+      document.querySelectorAll("#cat-filters .pill").forEach(p => p.classList.remove("active"));
+      btn.classList.add("active");
+      activeCat = btn.getAttribute("data-filter");
+      applyFilters();
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    if(params.get("q")){ input.value = params.get("q"); applyFilters(); }
+  })();
+  </script>
+
+</body>
+</html>
