@@ -7,7 +7,7 @@
 const SITE = {
   name: "Ultimate Online Calculator",
   shortName: "UOC",
-  baseUrl: "https://www.ultimateonlinecalculator.com"
+  baseUrl: "https://ultimate-online-calculator.vercel.app"
 };
 
 const CATEGORIES = [
