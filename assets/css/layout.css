@@ -74,6 +74,23 @@
   .mobile-nav{ display:block; }
 }
 
+@media (max-width: 640px){
+  .site-header{ min-height: var(--header-h); }
+  .site-header .container{ gap: 8px; }
+  .brand{
+    font-size: .9rem;
+    max-width: calc(100% - 100px);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .brand-mark{ width: 28px; height: 28px; border-radius: 8px; font-size: .82rem; }
+  .header-tools{ gap: 6px; }
+  .search-trigger, .theme-toggle, .menu-toggle{ width: 36px; height: 36px; }
+  .mobile-nav{ padding: 18px 14px 40px; }
+}
+
 /* ================= Footer ================= */
 .site-footer{ background: var(--paper-alt); border-top:1px solid var(--border); margin-top: 80px; }
 .footer-grid{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding: 56px 0 32px; }

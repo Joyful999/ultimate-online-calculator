@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ultimateonlinecalculator.com/sitemap.xml
+Sitemap: https://ultimate-online-calculator.vercel.app/sitemap.xml

@@ -45,7 +45,23 @@
 .calc-tool h2{ font-size:1.3rem; }
 .field-row{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:16px; }
 .field-row.single{ grid-template-columns: 1fr; }
-@media (max-width:640px){ .field-row{ grid-template-columns: 1fr; } }
+@media (max-width:640px){
+  .field-row{ grid-template-columns: 1fr; }
+  .hero{ padding-top: 42px; }
+  .hero-search{ margin-top: 20px; }
+  .hero-search-box{ flex-wrap: wrap; gap: 10px; padding: 12px; }
+  .hero-search-box input{ min-width: 0; flex: 1 1 100%; }
+  .hero-search-box .btn{ width: 100%; }
+  .hero-suggestions{ gap: 6px; }
+  .hero-suggestions .pill{ flex: 1 1 calc(50% - 6px); justify-content: center; text-align: center; }
+  .calc-card-foot{ flex-wrap: wrap; align-items: stretch; }
+  .calc-card-foot .badge,
+  .calc-card-foot .btn{ width: 100%; }
+  .calc-card-foot .btn{ justify-content: center; }
+  .filter-bar{ flex-direction: column; align-items: stretch; }
+  .filter-bar .search-input-wrap{ min-width: 0; width: 100%; }
+  .related-list a{ align-items: flex-start; gap: 8px; }
+}
 
 .field{ display:flex; flex-direction:column; gap:6px; }
 .field label{ font-size:.86rem; font-weight:600; color: var(--ink); }
