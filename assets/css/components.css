@@ -49,9 +49,13 @@
   .field-row{ grid-template-columns: 1fr; }
   .hero{ padding-top: 42px; }
   .hero-search{ margin-top: 20px; }
-  .hero-search-box{ flex-wrap: wrap; gap: 10px; padding: 12px; }
-  .hero-search-box input{ min-width: 0; flex: 1 1 100%; }
-  .hero-search-box .btn{ width: 100%; }
+  .hero-search-box{
+    flex-wrap: wrap; gap: 10px; padding: 12px;
+    display: grid; grid-template-columns: 1fr; align-items: center;
+  }
+  .hero-search-box svg{ margin-left: 2px; }
+  .hero-search-box input{ min-width: 0; width: 100%; flex: 1 1 auto; }
+  .hero-search-box .btn{ width: 100%; min-width: 100%; }
   .hero-suggestions{ gap: 6px; }
   .hero-suggestions .pill{ flex: 1 1 calc(50% - 6px); justify-content: center; text-align: center; }
   .calc-card-foot{ flex-wrap: wrap; align-items: stretch; }
